@@ -1,0 +1,340 @@
+/* ===== General Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #0e0e0e;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* ===== Navigation ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: #1a1a1a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #e63946;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    height: 90vh;
+    background: url('assets/images/hero-background.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+.btn {
+    background: #e63946;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #c72f3b;
+}
+
+/* ===== About Section ===== */
+.about {
+    padding: 4rem 10%;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #e63946;
+}
+
+/* ===== Featured Projects ===== */
+.featured {
+    padding: 4rem 10%;
+    background-color: #141414;
+}
+
+.featured h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #e63946;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    margin: 1rem 0;
+    color: #fff;
+}
+
+.btn-secondary {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: #e63946;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1a1a1a;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #e63946;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Web Pages Design ===== */
+/* ===== Page Headers ===== */
+.page-header {
+    text-align: center;
+    padding: 4rem 10% 2rem;
+    background-color: #0e0e0e;
+}
+
+.page-header h2 {
+    color: #e63946;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* ===== Film Gallery ===== */
+.film-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 2rem 10%;
+    background-color: #141414;
+}
+
+.film-card {
+    background: #1e1e1e;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.film-card h3 {
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.film-card p {
+    color: #aaa;
+    font-size: 0.95rem;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ===== Design Gallery ===== */
+.design-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 10%;
+    background-color: #141414;
+}
+
+.design-card {
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.design-card:hover {
+    transform: scale(1.03);
+}
+
+.design-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.design-card h3 {
+    margin: 1rem;
+    color: #fff;
+}
+.design-card p {
+    margin: 0 1rem 1rem;
+    color: #aaa;
+    font-size: 0.95rem;
+}
+/* ===== Contact Design ===== */
+/* ===== Contact Page ===== */
+.contact-section {
+    padding: 4rem 10%;
+    background-color: #141414;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    align-items: start;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    background: #1e1e1e;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.contact-form label {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #e63946;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #e63946;
+}
+
+.contact-form button {
+    margin-top: 1.5rem;
+    align-self: flex-start;
+}
+
+.contact-info {
+    background: #1e1e1e;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.contact-info h3 {
+    color: #e63946;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.8rem;
+    color: #ccc;
+}
+
+.contact-info a {
+    color: #e63946;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #fff;
+}
