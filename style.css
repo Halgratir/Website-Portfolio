@@ -7,8 +7,10 @@
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #3090b3;
-    color: #f0f0f0;
+    /* OLD: #0e0e0e (Dark) -> NEW: #ffffff (White) */
+    background-color: #ffffff;
+    /* OLD: #f0f0f0 (Light) -> NEW: #333333 (Dark Grey) */
+    color: #333333; 
     line-height: 1.6;
 }
 
@@ -18,16 +20,20 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 5%;
-    background-color: #082153;
+    /* OLD: #1a1a1a (Dark) -> NEW: #f0f0f0 (Light Grey) */
+    background-color: #f0f0f0;
     position: sticky;
     top: 0;
     z-index: 1000;
+    /* Add a subtle shadow for contrast on white body */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .logo {
     font-size: 1.5rem;
     letter-spacing: 2px;
-    color: #fff;
+    /* OLD: #fff (White) -> NEW: #333333 (Dark Grey) */
+    color: #333333;
 }
 
 .nav-links {
@@ -38,12 +44,14 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #ccc;
+    /* OLD: #ccc (Light Grey) -> NEW: #666666 (Medium Grey) */
+    color: #666666;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
+    /* Accent color kept bright red */
     color: #e63946;
 }
 
@@ -58,26 +66,32 @@ body {
 }
 
 .hero-content {
-    background: rgba(0, 0, 0, 0.6);
+    /* OLD: Dark overlay -> NEW: Light overlay (for readability against the background image) */
+    background: rgba(255, 255, 255, 0.8);
     padding: 2rem;
     border-radius: 8px;
+    /* Add subtle shadow to lift content off background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .hero h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #fff;
+    /* OLD: #fff (White) -> NEW: #333333 (Dark Grey) */
+    color: #333333;
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    color: #ccc;
+    /* OLD: #ccc (Light Grey) -> NEW: #666666 (Medium Grey) */
+    color: #666666;
 }
 
 .btn {
+    /* Accent color kept bright red for pop */
     background: #e63946;
-    color: #fff;
+    color: #fff; /* Keep text white for contrast on red button */
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 5px;
@@ -98,18 +112,21 @@ body {
 .about h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    /* Accent color kept bright red */
     color: #e63946;
 }
 
 /* ===== Featured Projects ===== */
 .featured {
     padding: 4rem 10%;
-    background-color: #141414;
+    /* OLD: #141414 (Dark) -> NEW: #f4f4f4 (Light Grey) */
+    background-color: #f4f4f4;
 }
 
 .featured h2 {
     text-align: center;
     margin-bottom: 2rem;
+    /* Accent color kept bright red */
     color: #e63946;
 }
 
@@ -120,15 +137,19 @@ body {
 }
 
 .project-card {
-    background: #1e1e1e;
+    /* OLD: #1e1e1e (Dark) -> NEW: #ffffff (White) */
+    background: #ffffff;
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s ease;
+    /* Add subtle shadow for definition on light background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project-card:hover {
     transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
 }
 
 .project-card img {
@@ -139,12 +160,14 @@ body {
 
 .project-card h3 {
     margin: 1rem 0;
-    color: #fff;
+    /* OLD: #fff (White) -> NEW: #333333 (Dark Grey) */
+    color: #333333;
 }
 
 .btn-secondary {
     display: inline-block;
     margin-bottom: 1.5rem;
+    /* Accent color kept bright red */
     color: #e63946;
     text-decoration: none;
     font-weight: bold;
@@ -152,65 +175,98 @@ body {
 }
 
 .btn-secondary:hover {
-    color: #fff;
+    /* OLD: #fff (White) -> NEW: #c72f3b (Darker Red for better visibility) */
+    color: #c72f3b; 
 }
 
 /* ===== Footer ===== */
 footer {
     text-align: center;
     padding: 2rem;
-    background-color: #1a1a1a;
-    color: #777;
+    /* OLD: #1a1a1a (Dark) -> NEW: #f0f0f0 (Light Grey) */
+    background-color: #f0f0f0;
+    /* OLD: #777 (Medium Grey) -> NEW: #666666 (Medium Grey) */
+    color: #666666;
     font-size: 0.9rem;
 }
 
 footer a {
-    color: #ad9822;
+    /* Accent color kept bright red */
+    color: #e63946;
     text-decoration: none;
 }
 footer a:hover {
     text-decoration: underline;
 }
 
-/* ===== Web Pages Design ===== */
+/* ===== Web Pages Design - General Section Updates ===== */
 /* ===== Page Headers ===== */
 .page-header {
     text-align: center;
     padding: 4rem 10% 2rem;
-    background-color: #0e0e0e;
+    /* OLD: #0e0e0e (Dark) -> NEW: #ffffff (White) */
+    background-color: #ffffff;
 }
 
 .page-header h2 {
+    /* Accent color kept bright red */
     color: #e63946;
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-/* ===== Film Gallery ===== */
-.film-gallery {
+/* ===== Film Gallery & Design Gallery (Section Backgrounds) ===== */
+.film-gallery, .design-gallery {
+    /* OLD: #141414 (Dark) -> NEW: #f4f4f4 (Light Grey) */
+    background-color: #f4f4f4;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
     padding: 2rem 10%;
-    background-color: #141414;
+}
+.film-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.design-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.film-card {
-    background: #1e1e1e;
-    padding: 1rem;
+
+/* ===== Film Card & Design Card (Card Backgrounds) ===== */
+.film-card, .design-card {
+    /* OLD: #1e1e1e (Dark) -> NEW: #ffffff (White) */
+    background: #ffffff;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+.film-card {
+    padding: 1rem;
     text-align: center;
 }
-
-.film-card h3 {
-    margin-top: 1rem;
-    color: #fff;
+.design-card {
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.design-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
 }
 
-.film-card p {
-    color: #aaa;
+.film-card h3, .design-card h3 {
+    margin: 1rem 0;
+    /* OLD: #fff (White) -> NEW: #333333 (Dark Grey) */
+    color: #333333;
+}
+
+.film-card p, .design-card p {
+    /* OLD: #aaa (Light Grey) -> NEW: #666666 (Medium Grey) */
+    color: #666666;
     font-size: 0.95rem;
 }
+.design-card p {
+    margin: 0 1rem 1rem;
+}
+
 
 .video-container {
     position: relative;
@@ -219,7 +275,6 @@ footer a:hover {
     overflow: hidden;
     border-radius: 8px;
 }
-
 .video-container iframe,
 .video-container video {
     position: absolute;
@@ -228,47 +283,17 @@ footer a:hover {
     width: 100%;
     height: 100%;
 }
-
-/* ===== Design Gallery ===== */
-.design-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 2rem 10%;
-    background-color: #141414;
-}
-
-.design-card {
-    background: #1e1e1e;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.design-card:hover {
-    transform: scale(1.03);
-}
-
 .design-card img {
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
 
-.design-card h3 {
-    margin: 1rem;
-    color: #fff;
-}
-.design-card p {
-    margin: 0 1rem 1rem;
-    color: #aaa;
-    font-size: 0.95rem;
-}
 /* ===== Contact Design ===== */
 .contact-section {
     padding: 4rem 10%;
-    background-color: #141414;
+    /* OLD: #141414 (Dark) -> NEW: #f4f4f4 (Light Grey) */
+    background-color: #f4f4f4;
 }
 
 .contact-container {
@@ -278,17 +303,23 @@ footer a:hover {
     align-items: start;
 }
 
+.contact-form, .contact-info {
+    /* OLD: #1e1e1e (Dark) -> NEW: #ffffff (White) */
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
-    background: #1e1e1e;
-    padding: 2rem;
-    border-radius: 10px;
 }
 
 .contact-form label {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
+    /* Accent color kept bright red */
     color: #e63946;
     font-weight: bold;
 }
@@ -296,16 +327,20 @@ footer a:hover {
 .contact-form input,
 .contact-form textarea {
     padding: 0.75rem;
-    border: none;
+    border: 1px solid #ddd; /* Added light border for definition */
     border-radius: 5px;
-    background-color: #2a2a2a;
-    color: #fff;
+    /* OLD: #2a2a2a (Dark) -> NEW: #eeeeee (Very Light Grey) */
+    background-color: #eeeeee;
+    /* OLD: #fff (White) -> NEW: #333333 (Dark Grey) */
+    color: #333333;
     font-size: 1rem;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
+    /* Outline color kept bright red */
     outline: 2px solid #e63946;
+    border-color: #e63946;
 }
 
 .contact-form button {
@@ -313,27 +348,25 @@ footer a:hover {
     align-self: flex-start;
 }
 
-.contact-info {
-    background: #1e1e1e;
-    padding: 2rem;
-    border-radius: 10px;
-}
-
 .contact-info h3 {
+    /* Accent color kept bright red */
     color: #e63946;
     margin-bottom: 1rem;
 }
 
 .contact-info p {
     margin-bottom: 0.8rem;
-    color: #ccc;
+    /* OLD: #ccc (Light Grey) -> NEW: #666666 (Medium Grey) */
+    color: #666666;
 }
 
 .contact-info a {
+    /* Accent color kept bright red */
     color: #e63946;
     text-decoration: none;
 }
 
 .contact-info a:hover {
-    color: #fff;
+    /* OLD: #fff (White) -> NEW: #c72f3b (Darker Red for better visibility) */
+    color: #c72f3b;
 }
