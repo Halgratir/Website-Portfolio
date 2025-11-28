@@ -1,4 +1,4 @@
-/* ===== General Reset ===== */
+/* ===== Global Styles ===== */
 * {
     margin: 0;
     padding: 0;
@@ -7,12 +7,11 @@
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    /* OLD: #0e0e0e (Dark) -> NEW: #ffffff (White) */
     background-color: #ffffff;
-    /* OLD: #f0f0f0 (Light) -> NEW: #333333 (Dark Grey) */
     color: #333333; 
     line-height: 1.6;
 }
+
 
 /* ===== Navigation ===== */
 .navbar {
@@ -20,19 +19,16 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 5%;
-    /* OLD: #1a1a1a (Dark) -> NEW: #f0f0f0 (Light Grey) */
     background-color: #f0f0f0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    /* Add a subtle shadow for contrast on white body */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .logo {
     font-size: 1.5rem;
     letter-spacing: 2px;
-    /* OLD: #fff (White) -> NEW: #333333 (Dark Grey) */
     color: #333333;
 }
 
@@ -44,20 +40,18 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    /* OLD: #ccc (Light Grey) -> NEW: #666666 (Medium Grey) */
     color: #666666;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-    /* Accent color kept bright red */
-    color: #e63946;
+    color: #D9CFE1;
 }
 
 /* ===== Hero Section ===== */
 .hero {
-    height: 90vh;
+    height: 30vh;
     background: url('assets/images/hero-background.jpg') center/cover no-repeat;
     display: flex;
     justify-content: center;
@@ -66,32 +60,33 @@ body {
 }
 
 .hero-content {
-    /* OLD: Dark overlay -> NEW: Light overlay (for readability against the background image) */
     background: rgba(255, 255, 255, 0.8);
     padding: 2rem;
     border-radius: 8px;
-    /* Add subtle shadow to lift content off background */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+
+
 
 .hero h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    /* OLD: #fff (White) -> NEW: #333333 (Dark Grey) */
     color: #333333;
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    /* OLD: #ccc (Light Grey) -> NEW: #666666 (Medium Grey) */
     color: #666666;
 }
 
 .btn {
-    /* Accent color kept bright red for pop */
-    background: #e63946;
-    color: #fff; /* Keep text white for contrast on red button */
+    background: #D9CFE1;
+    color: #333333; 
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 5px;
@@ -100,7 +95,7 @@ body {
 }
 
 .btn:hover {
-    background: #c72f3b;
+    background: #B1A6C5;
 }
 
 /* ===== About Section ===== */
@@ -112,22 +107,19 @@ body {
 .about h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    /* Accent color kept bright red */
-    color: #e63946;
+    color: #B1A6C5;
 }
 
 /* ===== Featured Projects ===== */
 .featured {
     padding: 4rem 10%;
-    /* OLD: #141414 (Dark) -> NEW: #f4f4f4 (Light Grey) */
     background-color: #f4f4f4;
 }
 
 .featured h2 {
     text-align: center;
     margin-bottom: 2rem;
-    /* Accent color kept bright red */
-    color: #e63946;
+    color: #B1A6C5;
 }
 
 .project-grid {
@@ -137,19 +129,17 @@ body {
 }
 
 .project-card {
-    /* OLD: #1e1e1e (Dark) -> NEW: #ffffff (White) */
     background: #ffffff;
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s ease;
-    /* Add subtle shadow for definition on light background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project-card:hover {
     transform: scale(1.03);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .project-card img {
@@ -160,41 +150,36 @@ body {
 
 .project-card h3 {
     margin: 1rem 0;
-    /* OLD: #fff (White) -> NEW: #333333 (Dark Grey) */
     color: #333333;
 }
 
 .btn-secondary {
     display: inline-block;
     margin-bottom: 1.5rem;
-    /* Accent color kept bright red */
-    color: #e63946;
+    color: #D9CFE1;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .btn-secondary:hover {
-    /* OLD: #fff (White) -> NEW: #c72f3b (Darker Red for better visibility) */
-    color: #c72f3b; 
+    color: #B1A6C5; 
 }
 
 /* ===== Footer ===== */
 footer {
     text-align: center;
     padding: 2rem;
-    /* OLD: #1a1a1a (Dark) -> NEW: #f0f0f0 (Light Grey) */
     background-color: #f0f0f0;
-    /* OLD: #777 (Medium Grey) -> NEW: #666666 (Medium Grey) */
     color: #666666;
     font-size: 0.9rem;
 }
 
 footer a {
-    /* Accent color kept bright red */
-    color: #e63946;
+    color: #D9CFE1;
     text-decoration: none;
 }
+
 footer a:hover {
     text-decoration: underline;
 }
@@ -204,20 +189,17 @@ footer a:hover {
 .page-header {
     text-align: center;
     padding: 4rem 10% 2rem;
-    /* OLD: #0e0e0e (Dark) -> NEW: #ffffff (White) */
     background-color: #ffffff;
 }
 
 .page-header h2 {
-    /* Accent color kept bright red */
-    color: #e63946;
+    color: #B1A6C5;
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 /* ===== Film Gallery & Design Gallery (Section Backgrounds) ===== */
 .film-gallery, .design-gallery {
-    /* OLD: #141414 (Dark) -> NEW: #f4f4f4 (Light Grey) */
     background-color: #f4f4f4;
     display: grid;
     gap: 2rem;
@@ -233,7 +215,6 @@ footer a:hover {
 
 /* ===== Film Card & Design Card (Card Backgrounds) ===== */
 .film-card, .design-card {
-    /* OLD: #1e1e1e (Dark) -> NEW: #ffffff (White) */
     background: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
@@ -254,12 +235,10 @@ footer a:hover {
 
 .film-card h3, .design-card h3 {
     margin: 1rem 0;
-    /* OLD: #fff (White) -> NEW: #333333 (Dark Grey) */
     color: #333333;
 }
 
 .film-card p, .design-card p {
-    /* OLD: #aaa (Light Grey) -> NEW: #666666 (Medium Grey) */
     color: #666666;
     font-size: 0.95rem;
 }
@@ -292,7 +271,6 @@ footer a:hover {
 /* ===== Contact Design ===== */
 .contact-section {
     padding: 4rem 10%;
-    /* OLD: #141414 (Dark) -> NEW: #f4f4f4 (Light Grey) */
     background-color: #f4f4f4;
 }
 
@@ -304,7 +282,6 @@ footer a:hover {
 }
 
 .contact-form, .contact-info {
-    /* OLD: #1e1e1e (Dark) -> NEW: #ffffff (White) */
     background: #ffffff;
     padding: 2rem;
     border-radius: 10px;
@@ -319,28 +296,24 @@ footer a:hover {
 .contact-form label {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-    /* Accent color kept bright red */
-    color: #e63946;
+    color: #B1A6C5;
     font-weight: bold;
 }
 
 .contact-form input,
 .contact-form textarea {
     padding: 0.75rem;
-    border: 1px solid #ddd; /* Added light border for definition */
+    border: 1px solid #ddd;
     border-radius: 5px;
-    /* OLD: #2a2a2a (Dark) -> NEW: #eeeeee (Very Light Grey) */
     background-color: #eeeeee;
-    /* OLD: #fff (White) -> NEW: #333333 (Dark Grey) */
     color: #333333;
     font-size: 1rem;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    /* Outline color kept bright red */
-    outline: 2px solid #e63946;
-    border-color: #e63946;
+    outline: 2px solid #D9CFE1;
+    border-color: #D9CFE1;
 }
 
 .contact-form button {
@@ -349,24 +322,20 @@ footer a:hover {
 }
 
 .contact-info h3 {
-    /* Accent color kept bright red */
-    color: #e63946;
+    color: #B1A6C5;
     margin-bottom: 1rem;
 }
 
 .contact-info p {
     margin-bottom: 0.8rem;
-    /* OLD: #ccc (Light Grey) -> NEW: #666666 (Medium Grey) */
     color: #666666;
 }
 
 .contact-info a {
-    /* Accent color kept bright red */
-    color: #e63946;
+    color: #D9CFE1;
     text-decoration: none;
 }
 
 .contact-info a:hover {
-    /* OLD: #fff (White) -> NEW: #c72f3b (Darker Red for better visibility) */
-    color: #c72f3b;
+    color: #B1A6C5;
 }
