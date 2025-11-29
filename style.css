@@ -52,7 +52,7 @@ body {
 /* ===== Hero Section ===== */
 .hero {
     height: 30vh;
-    background: url('assets/images/hero-background.jpg') center/cover no-repeat;
+    background: #386798;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,6 +77,7 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
 
 .hero p {
     font-size: 1.2rem;
@@ -105,6 +106,7 @@ body {
 }
 
 .about h2 {
+    font-family: "Limelight", sans-serif;
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #B1A6C5;
@@ -117,6 +119,8 @@ body {
 }
 
 .featured h2 {
+    font-family: "Limelight", sans-serif;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
     color: #B1A6C5;
@@ -193,6 +197,7 @@ footer a:hover {
 }
 
 .page-header h2 {
+    font-family: "Limelight", sans-serif;
     color: #B1A6C5;
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -327,15 +332,17 @@ footer a:hover {
 }
 
 .contact-info p {
+    font-size: 1rem;
     margin-bottom: 0.8rem;
     color: #666666;
 }
 
 .contact-info a {
-    color: #D9CFE1;
+    font-weight: bold;
+    color: #3f0f67;
     text-decoration: none;
 }
 
 .contact-info a:hover {
-    color: #B1A6C5;
+    color: #160b2b;
 }
