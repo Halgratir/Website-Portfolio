@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natalie Pegano | Film Editor & Graphic Designer</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Limelight&family=Major+Mono+Display&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Emilys+Candy&family=Fascinate&family=Fontdiner+Swanky&family=Fredericka+the+Great&family=Kaushan+Script&family=Limelight&family=Major+Mono+Display&family=Plaster&family=Rubik+80s+Fade&family=Sigmar&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Spicy+Rice&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
     <section class="hero">
         <div class="hero-content">
             <h2>Film Editor & Graphic Designer</h2>
-            <p>Experienced Graphic Designer and Video Editor with over 6 years of remote and on-site experience. Skilled in Adobe Creative Suite and Apple Final Cut Pro, with a strong focus on storytelling, visual polish, and audience engagement.</p>
+            <p>Experienced Graphic Designer and Video Editor with over 6 years of remote and on-site experience. Skilled in Adobe Creative Suite and Apple Final Cut Pro, with a strong focus on storytelling, visual polish, and audience engagement. Proven ability to collaborate effectively with cross-functional teams to deliver high-quality projects on time and within budget. Passionate about creating compelling visual content that captivates and inspires.</p>
             <a href="film-projects.html" class="btn">View My Work</a>
         </div>
     </section>
@@ -59,6 +59,39 @@
         </div>
     </section>
 
+    <!-- Error Handling JavaScript -->
+    <script>
+        // Check if fonts loaded successfully
+        document.fonts.ready.then(function() {
+            console.log('✓ All fonts loaded successfully');
+        }).catch(function(error) {
+            console.error('⚠ Font loading error:', error);
+            alert('Some fonts failed to load. The site may not display correctly. Please check your internet connection.');
+        });
+
+        // Check for stylesheet loading errors
+        window.addEventListener('error', function(e) {
+            if (e.target.tagName === 'LINK' && e.target.rel === 'stylesheet') {
+                console.error('⚠ Stylesheet failed to load:', e.target.href);
+                alert('Unable to load website styles. Please check your internet connection and refresh the page.');
+            }
+        }, true);
+
+        // Check if images fail to load
+        window.addEventListener('error', function(e) {
+            if (e.target.tagName === 'IMG') {
+                console.error('⚠ Image failed to load:', e.target.src);
+                e.target.style.background = 'linear-gradient(135deg, #F19BF2, #3370A6)';
+                e.target.alt = 'Image unavailable';
+            }
+        }, true);
+
+        // Log successful page load
+        window.addEventListener('load', function() {
+            console.log('✓ Portfolio website loaded successfully');
+        });
+    </script>
+    
     <!-- Footer -->
     <footer>
         <p>

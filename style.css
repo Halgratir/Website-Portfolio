@@ -1,4 +1,4 @@
-/* ===== Global Styles ===== */
+/* ===== General Reset ===== */
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +6,11 @@
 }
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #ffffff;
-    color: #333333; 
+    font-family: "Tinos", serif;
+    background-color: #F2EBDC;
+    color: #2a2a2a;
     line-height: 1.6;
 }
-
 
 /* ===== Navigation ===== */
 .navbar {
@@ -19,238 +18,250 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 5%;
-    background-color: #f0f0f0;
+    background-color: #3370A6;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
     font-size: 1.5rem;
-    letter-spacing: 2px;
-    color: #333333;
+    letter-spacing: 3px;
+    color: #F2EBDC;
+    font-weight: 700;
+    font-family: "Major Mono Display", monospace;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #666666;
-    transition: color 0.3s ease;
+    color: #F2EBDC;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: "Space Mono", monospace;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: #D9CFE1;
+    background-color: #F2913D;
+    color: #fff;
 }
 
 /* ===== Hero Section ===== */
 .hero {
-    height: 30vh;
-    background: #386798;
+    min-height: 85vh;
+    background: linear-gradient(135deg, #3370A6 0%, #F19BF2 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 2rem;
 }
 
 .hero-content {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(242, 235, 220, 0.95);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
 }
-
-
-
 
 .hero h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 1rem;
-    color: #333333;
-    font-family: "Limelight", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    color: #3370A6;
+    font-weight: 700;
+    font-family: "Fredericka the Great", serif;
 }
 
-
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 2rem;
-    color: #666666;
+    color: #555;
 }
 
 .btn {
-    background: #D9CFE1;
-    color: #333333; 
-    padding: 0.75rem 1.5rem;
+    background: #F2913D;
+    color: #fff;
+    padding: 1rem 2rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     text-decoration: none;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(242, 145, 61, 0.3);
 }
 
 .btn:hover {
-    background: #B1A6C5;
+    background: #F23005;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(242, 48, 5, 0.4);
 }
 
 /* ===== About Section ===== */
 .about {
-    padding: 4rem 10%;
+    padding: 5rem 10%;
     text-align: center;
+    background-color: #fff;
 }
 
 .about h2 {
-    font-family: "Limelight", sans-serif;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #B1A6C5;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #3370A6;
+    font-weight: 700;
+    font-family: "Fredericka the Great", serif;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
 }
 
 /* ===== Featured Projects ===== */
 .featured {
-    padding: 4rem 10%;
-    background-color: #f4f4f4;
+    padding: 5rem 10%;
+    background-color: #F2EBDC;
 }
 
 .featured h2 {
-    font-family: "Limelight", sans-serif;
-    font-size: 2rem;
     text-align: center;
-    margin-bottom: 2rem;
-    color: #B1A6C5;
+    margin-bottom: 3rem;
+    color: #3370A6;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: "Fredericka the Great", serif;
 }
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
 }
 
 .project-card {
-    background: #ffffff;
-    border-radius: 10px;
+    background: #fff;
+    border-radius: 15px;
     overflow: hidden;
     text-align: center;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .project-card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(51, 112, 166, 0.3);
 }
 
 .project-card img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
+    background: linear-gradient(135deg, #F19BF2, #3370A6);
 }
 
 .project-card h3 {
-    margin: 1rem 0;
-    color: #333333;
+    margin: 1.5rem 1rem 1rem;
+    color: #3370A6;
+    font-size: 1.4rem;
+    font-family: "Kaushan Script", cursive;
 }
 
 .btn-secondary {
     display: inline-block;
-    margin-bottom: 1.5rem;
-    color: #D9CFE1;
+    margin: 1rem 0 1.5rem;
+    color: #F2913D;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
     transition: color 0.3s ease;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #F2913D;
+    border-radius: 8px;
 }
 
 .btn-secondary:hover {
-    color: #B1A6C5; 
+    color: #fff;
+    background-color: #F2913D;
 }
 
 /* ===== Footer ===== */
 footer {
     text-align: center;
-    padding: 2rem;
-    background-color: #f0f0f0;
-    color: #666666;
-    font-size: 0.9rem;
+    padding: 2.5rem;
+    background-color: #3370A6;
+    color: #F2EBDC;
+    font-size: 0.95rem;
 }
 
 footer a {
-    color: #D9CFE1;
+    color: #F2913D;
     text-decoration: none;
+    font-weight: 600;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #F19BF2;
 }
 
-/* ===== Web Pages Design - General Section Updates ===== */
 /* ===== Page Headers ===== */
 .page-header {
     text-align: center;
     padding: 4rem 10% 2rem;
-    background-color: #ffffff;
+    background-color: #F2EBDC;
 }
 
 .page-header h2 {
-    font-family: "Limelight", sans-serif;
-    color: #B1A6C5;
-    font-size: 2rem;
+    color: #3370A6;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
+    font-weight: 700;
+    font-family: "Fredericka the Great", serif;
 }
 
-/* ===== Film Gallery & Design Gallery (Section Backgrounds) ===== */
-.film-gallery, .design-gallery {
-    background-color: #f4f4f4;
+/* ===== Film Gallery ===== */
+.film-gallery {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
     padding: 2rem 10%;
-}
-.film-gallery {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-}
-.design-gallery {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    background-color: #fff;
 }
 
-
-/* ===== Film Card & Design Card (Card Backgrounds) ===== */
-.film-card, .design-card {
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-}
 .film-card {
+    background: #F2EBDC;
     padding: 1rem;
+    border-radius: 12px;
     text-align: center;
-}
-.design-card {
-    overflow: hidden;
-    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
-.design-card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+
+.film-card:hover {
+    transform: translateY(-5px);
 }
 
-.film-card h3, .design-card h3 {
-    margin: 1rem 0;
-    color: #333333;
+.film-card h3 {
+    margin-top: 1rem;
+    color: #3370A6;
+    font-family: "Kaushan Script", cursive;
 }
 
-.film-card p, .design-card p {
-    color: #666666;
+.film-card p {
+    color: #555;
     font-size: 0.95rem;
 }
-.design-card p {
-    margin: 0 1rem 1rem;
-}
-
 
 .video-container {
     position: relative;
@@ -259,6 +270,7 @@ footer a:hover {
     overflow: hidden;
     border-radius: 8px;
 }
+
 .video-container iframe,
 .video-container video {
     position: absolute;
@@ -267,16 +279,52 @@ footer a:hover {
     width: 100%;
     height: 100%;
 }
+
+/* ===== Design Gallery ===== */
+.design-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 10%;
+    background-color: #fff;
+}
+
+.design-card {
+    background: #F2EBDC;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.design-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(51, 112, 166, 0.2);
+}
+
 .design-card img {
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
 
+.design-card h3 {
+    margin: 1rem;
+    color: #3370A6;
+    font-family: "Kaushan Script", cursive;
+}
+
+.design-card p {
+    margin: 0 1rem 1rem;
+    color: #555;
+    font-size: 0.95rem;
+}
+
 /* ===== Contact Design ===== */
 .contact-section {
     padding: 4rem 10%;
-    background-color: #f4f4f4;
+    background-color: #fff;
 }
 
 .contact-container {
@@ -286,39 +334,37 @@ footer a:hover {
     align-items: start;
 }
 
-.contact-form, .contact-info {
-    background: #ffffff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-}
-
 .contact-form {
     display: flex;
     flex-direction: column;
+    background: #F2EBDC;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form label {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-    color: #B1A6C5;
+    color: #3370A6;
     font-weight: bold;
 }
 
 .contact-form input,
 .contact-form textarea {
     padding: 0.75rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #eeeeee;
-    color: #333333;
+    border: 2px solid #3370A6;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #2a2a2a;
     font-size: 1rem;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    outline: 2px solid #D9CFE1;
-    border-color: #D9CFE1;
+    outline: none;
+    border-color: #F2913D;
+    box-shadow: 0 0 0 3px rgba(242, 145, 61, 0.1);
 }
 
 .contact-form button {
@@ -326,23 +372,59 @@ footer a:hover {
     align-self: flex-start;
 }
 
+.contact-info {
+    background: #F2EBDC;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
 .contact-info h3 {
-    color: #B1A6C5;
+    color: #3370A6;
     margin-bottom: 1rem;
+    font-weight: 700;
+    font-family: "Fredericka the Great", serif;
 }
 
 .contact-info p {
-    font-size: 1rem;
     margin-bottom: 0.8rem;
-    color: #666666;
+    color: #555;
 }
 
 .contact-info a {
-    font-weight: bold;
-    color: #3f0f67;
+    color: #F2913D;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .contact-info a:hover {
-    color: #160b2b;
+    color: #F23005;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .about h2,
+    .featured h2,
+    .page-header h2 {
+        font-size: 2rem;
+    }
 }
