@@ -6,9 +6,9 @@
 }
 
 body {
-    font-family: "Tinos", serif;
-    background-color: #F2EBDC;
-    color: #2a2a2a;
+    font-family: "Space Mono", monospace; /* Changed to Space Mono */
+    background-color: #FAFAFA;
+    color: #0F283C;
     line-height: 1.6;
 }
 
@@ -18,19 +18,19 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 5%;
-    background-color: #3370A6;
+    background-color: #6663A6;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 15px rgba(102, 99, 166, 0.2);
 }
 
 .logo {
     font-size: 1.5rem;
     letter-spacing: 3px;
-    color: #F2EBDC;
+    color: #FFFFFF;
     font-weight: 700;
-    font-family: "Major Mono Display", monospace;
+    font-family: "Sigmar", cursive; /* Changed to Sigmar */
 }
 
 .nav-links {
@@ -41,24 +41,24 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #F2EBDC;
+    color: #FFFFFF;
     transition: all 0.3s ease;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     font-weight: 500;
-    font-family: "Space Mono", monospace;
+    font-family: "Limelight", cursive;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-    background-color: #F2913D;
-    color: #fff;
+    background-color: #F2809F;
+    color: #FFFFFF;
 }
 
 /* ===== Hero Section ===== */
 .hero {
     min-height: 85vh;
-    background: linear-gradient(135deg, #3370A6 0%, #F19BF2 100%);
+    background: linear-gradient(135deg, #91B2F2 0%, #BAA6E0 50%, #D8D3FE 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,64 +67,65 @@ body {
 }
 
 .hero-content {
-    background: rgba(242, 235, 220, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     padding: 3rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(102, 99, 166, 0.3);
     max-width: 700px;
+    border: 3px solid #FEDCFF;
 }
 
 .hero h2 {
     font-size: 2.8rem;
     margin-bottom: 1rem;
-    color: #3370A6;
+    color: #6663A6;
     font-weight: 700;
-    font-family: "Fredericka the Great", serif;
+    font-family: "Emilys Candy", cursive;
 }
 
 .hero p {
     font-size: 1.3rem;
     margin-bottom: 2rem;
-    color: #555;
+    color: #0F283C;
 }
 
 .btn {
-    background: #F2913D;
-    color: #fff;
+    background: linear-gradient(135deg, #F2809F 0%, #FF78A3 100%);
+    color: #FFFFFF;
     padding: 1rem 2rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     text-decoration: none;
     transition: all 0.3s ease;
     display: inline-block;
     font-weight: 600;
-    box-shadow: 0 4px 15px rgba(242, 145, 61, 0.3);
+    box-shadow: 0 5px 20px rgba(242, 128, 159, 0.4);
 }
 
 .btn:hover {
-    background: #F23005;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(242, 48, 5, 0.4);
+    background: linear-gradient(135deg, #FF78A3 0%, #F2809F 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(255, 120, 163, 0.5);
 }
 
 /* ===== About Section ===== */
 .about {
     padding: 5rem 10%;
     text-align: center;
-    background-color: #fff;
+    background-color: #FFFFFF;
 }
 
 .about h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: #3370A6;
+    color: #6663A6;
     font-weight: 700;
-    font-family: "Fredericka the Great", serif;
+    font-family: "Fascinate", cursive;
 }
 
 .about p {
     font-size: 1.1rem;
-    color: #555;
+    color: #0F283C;
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.8;
@@ -133,16 +134,16 @@ body {
 /* ===== Featured Projects ===== */
 .featured {
     padding: 5rem 10%;
-    background-color: #F2EBDC;
+    background: linear-gradient(180deg, #FAFAFA 0%, #F2DFF2 100%);
 }
 
 .featured h2 {
     text-align: center;
     margin-bottom: 3rem;
-    color: #3370A6;
+    color: #6663A6;
     font-size: 2.5rem;
     font-weight: 700;
-    font-family: "Fredericka the Great", serif;
+    font-family: "Fontdiner Swanky", cursive;
 }
 
 .project-grid {
@@ -152,82 +153,85 @@ body {
 }
 
 .project-card {
-    background: #fff;
-    border-radius: 15px;
+    background: #FFFFFF;
+    border-radius: 20px;
     overflow: hidden;
     text-align: center;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 25px rgba(102, 99, 166, 0.15);
+    border: 3px solid transparent;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(51, 112, 166, 0.3);
+    box-shadow: 0 20px 45px rgba(186, 166, 224, 0.4);
+    border-color: #BAA6E0;
 }
 
 .project-card img {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    background: linear-gradient(135deg, #F19BF2, #3370A6);
+    background: linear-gradient(135deg, #91B2F2, #BAA6E0, #FEDCFF);
 }
 
 .project-card h3 {
     margin: 1.5rem 1rem 1rem;
-    color: #3370A6;
+    color: #F2809F;
     font-size: 1.4rem;
-    font-family: "Kaushan Script", cursive;
+    font-family: "Fascinate", cursive;
 }
 
 .btn-secondary {
     display: inline-block;
     margin: 1rem 0 1.5rem;
-    color: #F2913D;
+    color: #6663A6;
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
     padding: 0.5rem 1.5rem;
-    border: 2px solid #F2913D;
-    border-radius: 8px;
+    border: 2px solid #6663A6;
+    border-radius: 10px;
 }
 
 .btn-secondary:hover {
-    color: #fff;
-    background-color: #F2913D;
+    color: #FFFFFF;
+    background-color: #6663A6;
+    box-shadow: 0 5px 15px rgba(102, 99, 166, 0.3);
 }
 
 /* ===== Footer ===== */
 footer {
     text-align: center;
     padding: 2.5rem;
-    background-color: #3370A6;
-    color: #F2EBDC;
+    background-color: #6663A6;
+    color: #FFFFFF;
     font-size: 0.95rem;
 }
 
 footer a {
-    color: #F2913D;
+    color: #FEDCFF;
     text-decoration: none;
     font-weight: 600;
 }
 
 footer a:hover {
-    color: #F19BF2;
+    color: #F2809F;
 }
 
 /* ===== Page Headers ===== */
 .page-header {
     text-align: center;
     padding: 4rem 10% 2rem;
-    background-color: #F2EBDC;
+    background: linear-gradient(135deg, #D8D3FE 0%, #FEDCFF 100%);
 }
 
 .page-header h2 {
-    color: #3370A6;
+    color: #6663A6;
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: 700;
-    font-family: "Fredericka the Great", serif;
+    font-family: "Fascinate", cursive;
 }
 
 /* ===== Film Gallery ===== */
@@ -236,30 +240,33 @@ footer a:hover {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
     padding: 2rem 10%;
-    background-color: #fff;
+    background-color: #FFFFFF;
 }
 
 .film-card {
-    background: #F2EBDC;
+    background: linear-gradient(135deg, #F2DFF2 0%, #FEDCFF 100%);
     padding: 1rem;
-    border-radius: 12px;
+    border-radius: 15px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 8px 20px rgba(102, 99, 166, 0.15);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
 }
 
 .film-card:hover {
     transform: translateY(-5px);
+    border-color: #91B2F2;
+    box-shadow: 0 12px 30px rgba(145, 178, 242, 0.3);
 }
 
 .film-card h3 {
     margin-top: 1rem;
-    color: #3370A6;
-    font-family: "Kaushan Script", cursive;
+    color: #F2809F;
+    font-family: "Fascinate", cursive;
 }
 
 .film-card p {
-    color: #555;
+    color: #0F283C;
     font-size: 0.95rem;
 }
 
@@ -268,7 +275,8 @@ footer a:hover {
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 10px;
+    border: 3px solid #6663A6;
 }
 
 .video-container iframe,
@@ -286,21 +294,23 @@ footer a:hover {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     padding: 2rem 10%;
-    background-color: #fff;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2DFF2 100%);
 }
 
 .design-card {
-    background: #F2EBDC;
-    border-radius: 12px;
+    background: #FFFFFF;
+    border-radius: 15px;
     overflow: hidden;
     text-align: center;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(102, 99, 166, 0.15);
+    border: 2px solid transparent;
 }
 
 .design-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(51, 112, 166, 0.2);
+    box-shadow: 0 12px 35px rgba(186, 166, 224, 0.3);
+    border-color: #BAA6E0;
 }
 
 .design-card img {
@@ -311,20 +321,20 @@ footer a:hover {
 
 .design-card h3 {
     margin: 1rem;
-    color: #3370A6;
-    font-family: "Kaushan Script", cursive;
+    color: #F2809F;
+    font-family: "Fascinate", cursive;
 }
 
 .design-card p {
     margin: 0 1rem 1rem;
-    color: #555;
+    color: #0F283C;
     font-size: 0.95rem;
 }
 
 /* ===== Contact Design ===== */
 .contact-section {
     padding: 4rem 10%;
-    background-color: #fff;
+    background: linear-gradient(135deg, #FAFAFA 0%, #D8D3FE 100%);
 }
 
 .contact-container {
@@ -337,34 +347,37 @@ footer a:hover {
 .contact-form {
     display: flex;
     flex-direction: column;
-    background: #F2EBDC;
+    background: #FFFFFF;
     padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(102, 99, 166, 0.2);
+    border: 3px solid #FEDCFF;
 }
 
 .contact-form label {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-    color: #3370A6;
+    color: #6663A6;
     font-weight: bold;
 }
 
 .contact-form input,
 .contact-form textarea {
     padding: 0.75rem;
-    border: 2px solid #3370A6;
-    border-radius: 8px;
-    background-color: #fff;
-    color: #2a2a2a;
+    border: 2px solid #BAA6E0;
+    border-radius: 10px;
+    background-color: #FAFAFA;
+    color: #0F283C;
     font-size: 1rem;
+    transition: all 0.3s ease;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: #F2913D;
-    box-shadow: 0 0 0 3px rgba(242, 145, 61, 0.1);
+    border-color: #F2809F;
+    box-shadow: 0 0 15px rgba(242, 128, 159, 0.2);
+    background-color: #FFFFFF;
 }
 
 .contact-form button {
@@ -373,32 +386,34 @@ footer a:hover {
 }
 
 .contact-info {
-    background: #F2EBDC;
+    background: #FFFFFF;
     padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(102, 99, 166, 0.2);
+    border: 3px solid #FEDCFF;
 }
 
 .contact-info h3 {
-    color: #3370A6;
+    color: #6663A6;
     margin-bottom: 1rem;
     font-weight: 700;
-    font-family: "Fredericka the Great", serif;
+    font-family: "Fascinate", cursive;
 }
 
 .contact-info p {
     margin-bottom: 0.8rem;
-    color: #555;
+    color: #0F283C;
 }
 
 .contact-info a {
-    color: #F2913D;
+    color: #F2809F;
     text-decoration: none;
     font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 .contact-info a:hover {
-    color: #F23005;
+    color: #6663A6;
 }
 
 /* ===== Responsive Design ===== */
