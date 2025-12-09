@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: "Space Mono", monospace; /* Changed to Space Mono */
+    font-family: "PT Serif", serif;
     background-color: #FAFAFA;
     color: #0F283C;
     line-height: 1.6;
@@ -85,9 +85,13 @@ body {
 
 
 .hero p {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
     font-size: 1.3rem;
     margin-bottom: 2rem;
     color: #0F283C;
+    line-height: 1.6;
+    text-align: justify;
 }
 
 .btn {
@@ -109,28 +113,6 @@ body {
     box-shadow: 0 8px 30px rgba(255, 120, 163, 0.5);
 }
 
-/* ===== About Section ===== */
-.about {
-    padding: 5rem 10%;
-    text-align: center;
-    background-color: #FFFFFF;
-}
-
-.about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: #6663A6;
-    font-weight: 700;
-    font-family: "Fascinate", cursive;
-}
-
-.about p {
-    font-size: 1.1rem;
-    color: #0F283C;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
-}
 
 /* ===== Featured Projects ===== */
 .featured {
@@ -438,9 +420,49 @@ footer a:hover {
         font-size: 1.1rem;
     }
 
-    .about h2,
     .featured h2,
     .page-header h2 {
         font-size: 2rem;
+    }
+}
+
+/* ===== Title Carousel ===== */
+.title-carousel {
+    height: 80px;
+    overflow: hidden;
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+.carousel-text {
+    font-family: "PT Serif", serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #6663A6;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-in-out;
+}
+
+.carousel-text.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.carousel-text.exiting {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+/* Responsive carousel */
+@media (max-width: 768px) {
+    .carousel-text {
+        font-size: 2rem;
+    }
+
+    .title-carousel {
+        height: 60px;
     }
 }
