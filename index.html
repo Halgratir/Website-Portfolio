@@ -10,6 +10,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Emilys+Candy&family=Fascinate&family=Fontdiner+Swanky&family=Fredericka+the+Great&family=Kaushan+Script&family=Limelight&family=Major+Mono+Display&family=Plaster&family=Rubik+80s+Fade&family=Sigmar&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Spicy+Rice&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
+<style>
+    .hero-content h2 {
+    font-family: "Space Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+
+}           .carousel-text {
+            font-family: 'Fredericka the Great', cursive;
+            font-size: 2.5rem;
+            font-weight: bold;
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-in-out;
+        }
+
+        .carousel-text.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .carousel-text.exiting {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #3370A6;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+</style>
 <body>
     <!-- Navigation Bar -->
     <header>
@@ -25,22 +77,50 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero/Carousal Section -->
     <section class="hero">
         <div class="hero-content">
-            <h2>Film Editor & Graphic Designer</h2>
+             <div class="title-carousel">
+                <h2 class="carousel-text active">Film Editor</h2>
+                <h2 class="carousel-text">Graphic Designer</h2>
+                <h2 class="carousel-text">Front-End Web Designer</h2>
+                <h2 class="carousel-text">Assistant</h2>
+                <h2 class="carousel-text">Data Analyst</h2>
+                <h2 class="carousel-text">UX Designer</h2>
+            </div>
             <p>Experienced Graphic Designer and Video Editor with over 6 years of remote and on-site experience. Skilled in Adobe Creative Suite and Apple Final Cut Pro, with a strong focus on storytelling, visual polish, and audience engagement. Proven ability to collaborate effectively with cross-functional teams to deliver high-quality projects on time and within budget. Passionate about creating compelling visual content that captivates and inspires.</p>
+
+            <p>
+             Highly skilled and creative Graphic Designer and Video Editor with over 6 years of experience in remote and on-site roles. Proficient in Adobe Creative Suite and Apple Final Cut Pro, I specialize in creating engaging and visually polished content for various platforms, including YouTube and film. My strong communication and teamwork skills, combined with a deep understanding of storytelling and visual aesthetics, enable me to deliver high-quality projects that meet and exceed client expectations. 
+            </p>
             <a href="film-projects.html" class="btn">View My Work</a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about">
-        <h2>About Me</h2>
-        <p>
-            Highly skilled and creative Graphic Designer and Video Editor with over 6 years of experience in remote and on-site roles. Proficient in Adobe Creative Suite and Apple Final Cut Pro, I specialize in creating engaging and visually polished content for various platforms, including YouTube and film. My strong communication and teamwork skills, combined with a deep understanding of storytelling and visual aesthetics, enable me to deliver high-quality projects that meet and exceed client expectations. 
-        </p>
-    </section>
+
+    <!-- Title Carousel Script -->
+    <script>
+        const titles = document.querySelectorAll('.carousel-text');
+        let currentIndex = 0;
+
+        function rotateTitle() {
+            // Add exiting class to current title
+            titles[currentIndex].classList.remove('active');
+            titles[currentIndex].classList.add('exiting');
+            
+            // Move to next title
+            currentIndex = (currentIndex + 1) % titles.length;
+            
+            // Add active class to new title
+            titles[currentIndex].classList.remove('exiting');
+            titles[currentIndex].classList.add('active');
+        }
+
+        // Rotate every 3 seconds
+        setInterval(rotateTitle, 3000);
+    </script>
+
+    
 
     <!-- Featured Work -->
     <section class="featured">
