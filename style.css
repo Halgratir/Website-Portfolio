@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* ===== SLATE MODERN COLOR PALETTE ===== */
@@ -149,6 +148,12 @@ body {
     box-shadow: 0 8px 30px rgba(6, 182, 212, 0.5);
 }
 
+/* New style for the "Commission Me" button to be larger */
+.btn-large {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.1rem;
+}
+
 /* ===== About Section ===== */
 .about {
     padding: 5rem 10%;
@@ -170,6 +175,104 @@ body {
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.8;
+}
+
+/* ===== Services/Commission Section (NEW) ===== */
+.services {
+    padding: 5rem 10%;
+    text-align: center;
+    background: linear-gradient(180deg, #E2E8F0 0%, #CBD5E1 100%); /* Light background to break up About/Featured */
+}
+
+.services h2 {
+    color: #1E293B;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-family: "Fascinate", cursive;
+}
+
+.services-intro {
+    font-size: 1.1rem;
+    color: #475569;
+    margin-bottom: 3rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.service-card {
+    background: #FFFFFF;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(71, 85, 105, 0.1);
+    transition: transform 0.3s ease;
+    border: 3px solid #CBD5E1;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: #06B6D4;
+    box-shadow: 0 15px 40px rgba(6, 182, 212, 0.3);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #06B6D4; /* Icon color */
+}
+
+.service-card h3 {
+    color: #1E293B;
+    font-family: "Fascinate", cursive;
+    margin-bottom: 0.5rem;
+}
+
+.service-card p {
+    color: #475569;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.service-list li {
+    font-size: 0.9rem;
+    color: #475569;
+    padding: 0.2rem 0;
+    border-bottom: 1px dashed #E2E8F0;
+}
+
+.service-list li:before {
+    content: "✓";
+    color: #06B6D4;
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+.cta-container {
+    background: #FFFFFF;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(71, 85, 105, 0.1);
+    border: 3px solid #06B6D4;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-container h3 {
+    color: #1E293B;
+    font-family: "Fascinate", cursive;
+    margin-bottom: 0.5rem;
 }
 
 /* ===== Featured Projects ===== */
@@ -372,7 +475,7 @@ footer a:hover {
     font-size: 0.95rem;
 }
 
-/* ===== Contact Design ===== */
+/* ===== Contact Design (No major changes, just ensure new styles don't conflict) ===== */
 .contact-section {
     padding: 4rem 10%;
     background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 100%);
@@ -480,7 +583,8 @@ footer a:hover {
 
     .about h2,
     .featured h2,
-    .page-header h2 {
+    .page-header h2,
+    .services h2 { /* Added services h2 */
         font-size: 2rem;
     }
 
@@ -490,5 +594,27 @@ footer a:hover {
 
     .title-carousel {
         height: 60px;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .carousel-text {
+        font-size: 1.5rem;
+    }
+
+    .title-carousel {
+        height: 50px;
     }
 }
