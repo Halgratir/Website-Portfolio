@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Emilys+Candy&family=Fascinate&family=Fontdiner+Swanky&family=Fredericka+the+Great&family=Kaushan+Script&family=Limelight&family=Major+Mono+Display&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Plaster&family=Sigmar&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Spicy+Rice&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- 
+PROFESSIONAL FONT SYSTEM:
+- Inter: Clean, modern body text (excellent readability)
+- Poppins: Strong, professional headings (geometric sans-serif)
+
+These are industry-standard fonts used by major tech companies and professional brands.
+-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
@@ -73,7 +81,6 @@
                 <li><a href="film-projects.html">Film Projects</a></li>
                 <li><a href="graphic-design.html">Graphic Design</a></li>
                 <li><a href="https://www.redbubble.com/people/Flownoir/shop?asc=u&ref=account-nav-dropdown" target="_blank">Visit My Shop</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -175,8 +182,39 @@
 
         <div class="cta-container">
             <h3>Ready to Start Your Project?</h3>
+            <p>Whether you need a stunning logo, a captivating short film, or a data-driven strategy, I'm here to help.</p>
             <p>Let's discuss how I can help bring your vision to life.</p>
-            <a href="contact.html" class="btn btn-large">Commission Me</a>
+
+            <!-- Page Header -->
+    <section class="page-header">
+        <h2>Contact Me</h2>
+        <p>Let’s collaborate or discuss a project. I’d love to hear from you.</p>
+    </section>
+
+
+            <!-- Contact Form -->
+            <form action="https://formspree.io/f/mzzypyee" method="POST" class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="_replyto" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h3>Let’s Connect</h3>
+                <p>Email: <a href="mailto:nataliepegano@email.com">n.pegano@yahoo.com</a></p>
+                <p>Instagram: <a href="https://www.instagram.com/nat_nessie/" target="_blank">@nat_nessie</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/nataliepegano/" target="_blank">Natalie Pegano LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
         </div>
     </section> 
 
@@ -229,6 +267,8 @@
             console.log('✓ Portfolio website loaded successfully');
         });
     </script>
+
+    
 
     <!-- Footer -->
     <footer>
