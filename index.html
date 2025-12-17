@@ -104,7 +104,23 @@ These are industry-standard fonts used by major tech companies and professional 
         </div>
     </section>
 
-
+<!-- Featured Work -->
+    <section class="featured">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="assets/images/film-thumbnail.jpg" alt="Film Project">
+                <h3>Short Film: “Through the Lens”</h3>
+                <a href="film-projects.html" class="btn-secondary">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="assets/images/design-thumbnail.jpg" alt="Design Project">
+                <h3>Poster Series: “Modern Motion”</h3>
+                <a href="graphic-design.html" class="btn-secondary">View Project</a>
+            </div>
+        </div>
+    </section>
+    
     <!-- Title Carousel Script -->
     <script>
         const titles = document.querySelectorAll('.carousel-text');
@@ -139,7 +155,7 @@ These are industry-standard fonts used by major tech companies and professional 
                 <ul class="service-list">
                     <li>Logo Design</li>
                     <li>Brand Identity</li>
-                    <li>Print & Digital Materials</li>
+                    <li>Presentation Design</li>
                     <li>Social Media Graphics</li>
                 </ul>
             </div>
@@ -151,7 +167,7 @@ These are industry-standard fonts used by major tech companies and professional 
                 <ul class="service-list">
                     <li>Short Films</li>
                     <li>YouTube Content</li>
-                    <li>Promotional Videos</li>
+                    <li>Motion Graphic Design</li>
                     <li>Social Media Content</li>
                 </ul>
             </div>
@@ -161,10 +177,10 @@ These are industry-standard fonts used by major tech companies and professional 
                 <h3>Web Design & Development</h3>
                 <p>Create a stunning online presence with modern, responsive websites that showcase your brand.</p>
                 <ul class="service-list">
-                    <li>Portfolio Websites</li>
+                    <li>HTML & CSS Proficient</li>
                     <li>Landing Pages</li>
                     <li>Front-End Development</li>
-                    <li>UI/UX Design</li>
+                    <li>UX Design</li>
                 </ul>
             </div>
 
@@ -173,9 +189,9 @@ These are industry-standard fonts used by major tech companies and professional 
                 <h3>Data Analysis</h3>
                 <p>Transform raw data into actionable insights with clear visualizations and strategic recommendations.</p>
                 <ul class="service-list">
-                    <li>Data Visualization</li>
+                    <li>Data Visualization & Extraction</li>
                     <li>Reports & Dashboards</li>
-                    <li>Business Intelligence</li>
+                    <li>Tableau Efficiency</li>
                     <li>Market Analysis</li>
                 </ul>
             </div>
@@ -184,84 +200,40 @@ These are industry-standard fonts used by major tech companies and professional 
         <div class="cta-container">
             <h3>Ready to Start Your Project?</h3>
             <p>Whether you need a stunning logo, a captivating short film, or a data-driven strategy, I'm here to help.</p>
-            <p>Let's discuss how I can help bring your vision to life.</p>
 
-            <!-- Page Header -->
-    <section class="page-header">
-        <h2>Contact Me</h2>
-        <p>Let’s collaborate or discuss a project. I’d love to hear from you.</p>
-    </section>
-
-
+           
 
     <!-- Contact Section -->
     <section class="contact-section">
-        <h2>Get in Touch</h2>
-        <p class="contact-intro">Have a project in mind? Fill out the form below or reach out directly. I'd love to hear from you.</p>
-        
         <div class="contact-container">
-            <div class="contact-form">
-                <h3>Send a Message</h3>
-                <p style="color: #64748B; font-size: 0.95rem; margin-bottom: 1.5rem;">I typically respond within 24 hours</p>
-                <div style="padding: 2rem; background: #F8FAFC; border-radius: 8px; text-align: center; color: #64748B;">
-                    <p>📧 Contact Form Fields</p>
-                    <p style="font-size: 0.85rem; margin-top: 0.5rem;">(Name, Email, Message, Submit Button)</p>
-                </div>
+            <div class="contact-card">
+                <h2>Contact Me</h2>
+                <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+                <form action="https://formspree.io/f/mzzypyee" method="POST" class="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="_replyto" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
             </div>
-            
+
             <div class="contact-info">
-                <h3>Contact Information</h3>
-                <p>📧 <strong>Email:</strong> n.pegano@yahoo.com</p>
-                <p>💼 <strong>LinkedIn:</strong> linkedin.com/in/nataliepegano</p>
-                <p>📱 <strong>Instagram:</strong> @yourusername</p>
-                <p style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #E2E8F0;">
-                    Looking forward to collaborating with you on your next project!
-                </p>
+                <h2>Let’s Connect</h2>
+                <p>📧 Email: <a href="mailto:n.pegano@yahoo.com">n.pegano@yahoo.com</a></p>
+                <p>📱 Instagram: <a href="https://www.instagram.com/nat_nessie/" target="_blank">@nat_nessie</a></p>
+                <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/nataliepegano/" target="_blank">Natalie Pegano</a></p>
+                <p style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #E2E8F0;">Looking forward to collaborating with you on your next project!</p>
             </div>
         </div>
     </section>
-            <!-- Contact Form -->
-            <form action="https://formspree.io/f/mzzypyee" method="POST" class="contact-form">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="_replyto" required>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-            
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <h3>Let’s Connect</h3>
-                <p>Email: <a href="mailto:nataliepegano@email.com">n.pegano@yahoo.com</a></p>
-                <p>Instagram: <a href="https://www.instagram.com/nat_nessie/" target="_blank">@nat_nessie</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/nataliepegano/" target="_blank">Natalie Pegano LinkedIn</a></p>
-            </div>
-        </div>
-    </section>
-        </div>
-    </section> 
-
-    <!-- Featured Work -->
-    <section class="featured">
-        <h2>Featured Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <img src="assets/images/film-thumbnail.jpg" alt="Film Project">
-                <h3>Short Film: “Through the Lens”</h3>
-                <a href="film-projects.html" class="btn-secondary">View Project</a>
-            </div>
-            <div class="project-card">
-                <img src="assets/images/design-thumbnail.jpg" alt="Design Project">
-                <h3>Poster Series: “Modern Motion”</h3>
-                <a href="graphic-design.html" class="btn-secondary">View Project</a>
-            </div>
-        </div>
-    </section>
+    
 
 
     <!-- Error Handling JavaScript -->

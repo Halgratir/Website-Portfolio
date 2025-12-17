@@ -177,30 +177,6 @@ p {
     box-shadow: 0 0 24px rgba(255, 0, 128, 0.6);
 }
 
-/* ===== About Section ===== */
-.about {
-    padding: 5rem 0;
-    background-color: #0A0E27;
-}
-
-.about .container {
-    max-width: 900px;
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 2.25rem;
-    margin-bottom: 2rem;
-    color: #00FFF0;
-    font-weight: 700;
-    text-shadow: 0 0 12px rgba(0, 255, 240, 0.3);
-}
-
-.about p {
-    font-size: 1.05rem;
-    color: #E0E0E0;
-    line-height: 1.9;
-}
 
 /* ===== Services Section (BALANCED SPACING) ===== */
 .services {
@@ -421,6 +397,77 @@ footer {
     color: #E0E0E0;
     font-size: 0.95rem;
     border-top: 1px solid rgba(0, 255, 240, 0.2);
+}
+
+/* ===== Contact Section ===== */
+.contact-section {
+    padding: 3rem 2rem 4rem;
+    background: transparent;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: flex;
+    gap: 1.5rem;
+    align-items: stretch; /* ensure equal-height children */
+    padding: 0 2rem;
+}
+
+.contact-card {
+    flex: 1 1 60%;
+    background: #1a1a3e;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #7928CA;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+}
+
+.contact-info {
+    flex: 0 0 320px;
+    background: #1a1a3e;
+    padding: 1.25rem 1.5rem; /* reduced top padding to shorten the box height */
+    border-radius: 12px;
+    border: 1px solid #7928CA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* distribute children evenly vertically */
+    gap: 0.75rem;
+}
+
+.contact-card h2,
+.contact-info h2 {
+    color: #00FFF0;
+    margin: 0 0 0.75rem;
+}
+
+.contact-info p {
+    margin: 0;
+    color: #E0E0E0;
+}
+
+.contact-note {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #E2E8F0;
+    color: #B8C0CC;
+    font-size: 0.95rem;
+}
+
+.contact-info p a {
+    color: #E0E0E0;
+    text-decoration: underline;
+}
+
+@media (max-width: 880px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .contact-info {
+        flex: 1 1 auto;
+    }
 }
 
 footer a {
