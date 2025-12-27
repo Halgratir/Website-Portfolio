@@ -75,7 +75,6 @@ These are industry-standard fonts used by major tech companies and professional 
     <!-- Navigation Bar -->
     <header>
         <nav class="navbar">
-            <h1 class="logo">NATALIE PEGANO</h1>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="film-projects.html">Film Projects</a></li>
@@ -86,23 +85,26 @@ These are industry-standard fonts used by major tech companies and professional 
         </nav>
     </header>
 
-    <!-- Hero/Carousal Section -->
-    <section class="hero">
-        <div class="hero-content">
-             <div class="title-carousel">
-                <h2 class="carousel-text active">Film Editor</h2>
-                <h2 class="carousel-text">Graphic Designer</h2>
-                <h2 class="carousel-text">Front-End Web Designer</h2>
-                <h2 class="carousel-text">Assistant</h2>
-                <h2 class="carousel-text">Data Analyst</h2>
-                <h2 class="carousel-text">UX Designer</h2>
-            </div>
-            <p>I am a versatile creative professional with 6+ years of experience spanning Graphic Design, Video Editing, and emerging proficiency in UX Design and Front-End Development. My passion lies in crafting visually compelling content that drives engagement. I leverage a comprehensive technical skill set across Adobe Creative Suite (Premiere Pro, Photoshop, Illustrator) and Apple Final Cut Pro to deliver high-polish cinematic narratives, motion graphics, and engaging promotional videos. With foundational expertise in UX Design (holding the Google Professional Certificate) and development tools like Figma and HTML/CSS, I approach every project with a dual focus on both visual aesthetics and technical function. I thrive in collaborative, fast-paced environments. My background in administrative support and production logistics  has equipped me with the organizational and team-management skills necessary to ensure seamless communication and deliver high-quality projects efficiently and on time.</p>
 
-        
-            <a href="film-projects.html" class="btn">View My Work</a>
-        </div>
-    </section>
+<section class="intro-section">
+    <h1 class="logo">NATALIE PEGANO</h1>
+    <h2>I am a </h2>
+    
+<ul>
+    <li class="listwords">Film Editor</li>
+    <li class="listwords">Graphic Designer</li>
+    <li class="listwords">Front-End Web Designer</li>
+    <li class="listwords">Assistant</li>
+    <li class="listwords">Data Analyst</li>
+    <li class="listwords">UX Designer</li>
+</ul>
+
+<p>
+    I am a versatile creative professional with 6+ years of experience spanning Graphic Design, Video Editing, and emerging proficiency in UX Design and Front-End Development. My passion lies in crafting visually compelling content that drives engagement. I leverage a comprehensive technical skill set across Adobe Creative Suite (Premiere Pro, Photoshop, Illustrator) and Apple Final Cut Pro to deliver high-polish cinematic narratives, motion graphics, and engaging promotional videos. With foundational expertise in UX Design (holding the Google Professional Certificate) and development tools like Figma and HTML/CSS, I approach every project with a dual focus on both visual aesthetics and technical function. I thrive in collaborative, fast-paced environments. My background in administrative support and production logistics  has equipped me with the organizational and team-management skills necessary to ensure seamless communication and deliver high-quality projects efficiently and on time
+</p>
+</section>
+
+
 
 <!-- Featured Work -->
     <section class="featured">
@@ -123,27 +125,7 @@ These are industry-standard fonts used by major tech companies and professional 
         </div>
     </section>
     
-    <!-- Title Carousel Script -->
-    <script>
-        const titles = document.querySelectorAll('.carousel-text');
-        let currentIndex = 0;
-
-        function rotateTitle() {
-            // Add exiting class to current title
-            titles[currentIndex].classList.remove('active');
-            titles[currentIndex].classList.add('exiting');
-            
-            // Move to next title
-            currentIndex = (currentIndex + 1) % titles.length;
-            
-            // Add active class to new title
-            titles[currentIndex].classList.remove('exiting');
-            titles[currentIndex].classList.add('active');
-        }
-
-        // Rotate every 3 seconds
-        setInterval(rotateTitle, 3000);
-    </script>
+   
 
    <section class="services">
         <h2>Let's Work Together</h2>
